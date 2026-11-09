@@ -1,0 +1,361 @@
+/*CSS DOCUMENT*/
+
+html,
+body,
+div,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+/*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+div.home-container {
+	background-size: cover;
+	background: url(hungup.jpg);
+	background-color: white;
+	position: relative;
+	min-height: 100vh;
+	max-width: 60em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: auto;
+}
+
+div.container {
+	position: relative;
+	min-height: 100vh;
+	max-width: 80em;
+	margin: auto;
+	background-color: white;
+}
+
+/* >>> IMPORTANT: you have to change the wrap of the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class. And you need a div with the class container and all the other pages.  */
+
+
+main {
+	padding: 2em 2em 4em;
+}
+
+body {
+	font-family: "corsairpe", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color: rgb(179, 223, 227);
+	margin: auto;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	background-color: rgb(226, 226, 226);
+	padding: 0.75em 0.5em 2em;
+}
+
+h1 {
+	width: 10em;
+}
+
+h2,
+h3,
+h4 {
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 0.5em 0 0.5em;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin: 0.5em 0em 1em;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+nav ul {
+	text-align: right;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+figure {
+	margin-bottom: 1em;
+}
+
+main.menu ul {
+	margin: 1em 0 1em;
+}
+
+main.menu ul li {
+	margin: 1em 0 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+p {
+	margin: 1em;
+	font-family: "bc-civitas", sans-serif; 
+	font-weight: 500;
+	font-style: normal;
+}
+
+p.description {
+	grid-column: 1/3;
+	margin: 0em;
+}
+
+p.price {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	color: rgb(102, 150, 154);
+	text-align: right;
+	margin: 0em;
+}
+
+nav ul li {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+}
+
+nav ul li a {
+	color: rgb(255, 255, 255);
+	background-color: rgb(108, 108, 108);
+	padding: 10px;
+}
+
+
+p.slogan {
+	font-size: 4em;
+	font-family: serif;
+	font-style: italic;
+	font-style: bold;
+	margin: 0.5em 0 1em;
+	color: black;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2em;
+	box-sizing: border-box;
+	padding: 1em 1em 2em;
+}
+
+address {
+	color: rgb(0, 0, 0);
+}
+
+article {
+	width: 40em;
+	margin: auto;
+}
+
+footer p {
+	margin: 0;
+}
+
+nav ul li.selected a {
+	color: rgb(250, 250, 250);
+	background-color: rgb(167, 167, 167);
+}
+
+a:focus {
+  outline: none;
+  outline: rgb(102, 150, 154) dotted 1px; 
+}
+
+@media screen and (min-width: 60em) {
+	main.menu ul {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2em 6em;
+	}
+
+	nav ul li {
+		display: inline;
+		padding: 0.5em;
+	}
+
+	nav ul {
+		padding-top: 2em;
+	}
+}
+
+
+
+
+
+
+
+
+ /* Code for cards */
+ 
+  .cardphoto img {
+    display: block;
+    max-width: 100%; 
+  }
+ 
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+ 
+  .card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 250px;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+  }
+  .card:hover {
+    transition: all 0.1s ease-in;
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .cardphoto {
+    max-height: 250px;
+    overflow: hidden;
+  }
+ 
+  .cardarticle {
+    padding: 1.2rem;
+    flex-grow: 1;
+  }
+ 
+  /* typography */
+  .cardh3 {
+    font-size: 1.75rem;
+    margin: 0;
+    color: rgb(120, 180, 186);
+	width: 9em;
+  }
+ 
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+	color: rgb(3, 3, 3);
+	margin: 0;
+	width: 10em;
+	padding-bottom: 1em;
+  }
+ 
+  .card footer {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(142, 205, 211);
+    text-transform: uppercase;
+    margin: 0;
+	padding-top: 2em;
+    text-align: center;
+  }
+
+  .cardh3 h3{
+      color:#444;
+  }
+ 
